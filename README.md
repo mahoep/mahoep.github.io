@@ -1,6 +1,8 @@
 # What is this?
-This is the code base for my personal website on GitHub pages. The theme was forked from orderedlist as they did a fantastic job.
+This is the code base for my personal website on GitHub pages. 
 https://mahoep.github.io.
+
+The theme was forked from orderedlist as they did a fantastic job.
 # Minimal Theme
 
 [Demo the Theme](http://orderedlist.github.com/minimal/)
