@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
+  text-align:justify;
 }
 
 h1, h2, h3 {
@@ -55,7 +56,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:1200px;
+  width:1450px;
   margin:0 auto;
 }
 
@@ -173,7 +174,7 @@ header ul a strong {
 }
 
 section {
-  width: 850px;
+  width: 1100px;
   float:right;
   padding-bottom:50px;
 }

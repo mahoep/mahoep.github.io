@@ -1,381 +1,365 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Matt's Website</title>
+<head>
+	<meta charset="utf-8">
+	<meta content="chrome=1" http-equiv="X-UA-Compatible">
+	<title>Matt's Website</title>
+	<link href="stylesheets/styles.css" rel="stylesheet">
+	<link href="stylesheets/pygment_trac.css" rel="stylesheet">
+	<link href="stylesheets/tabs.css" rel="stylesheet">
+	<link href="stylesheets/resume.css" rel="stylesheet">
+	<meta content="width=device-width" name="viewport">
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <link rel="stylesheet" href="stylesheets/tabs.css">
-    <link rel="stylesheet" href="stylesheets/resume.css">
-    <meta name="viewport" content="width=device-width">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID">
+	</script>
+	<script>
+	        window.dataLayer = window.dataLayer || [];
+	        function gtag(){dataLayer.push(arguments);}
+	        gtag('js', new Date());
 
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Matthew Hoeper</h1>
-        <img src="images/headshot.png" alt="Headshot of Matt" style="width:270px">
-        <p>Hello! My name is Matt and I'm a PhD student at Purdue University studying Mechanical Engineering. I work at the Zucrow Labs under Dr.
-          Terrence Meyer studying combustion, sprays, and propulsion.<p>
-        <p>Email: <script type="text/javascript" language="javascript">
-                //<!--
-                // Email obfuscator script 2.1 by Tim Williams, University of Arizona
-                // Random encryption key feature coded by Andrew Moulden
-                // This code is freeware provided these four comment lines remain intact
-                // A wizard to generate this code is at http://www.jottings.com/obfuscator/
-                //-->
-                { coded = "MsF8O8B@OaBYa8.8Ya"
-                  key = "bhnBIRW6T0ZF43E8zpdsQu2USvNiwcyVPm5OYx1ajLHgGJDrqtfM79CoXAKekl"
-                  shift=coded.length
-                  link=""
-                  for (i=0; i<coded.length; i++) {
-                    if (key.indexOf(coded.charAt(i))==-1) {
-                      ltr = coded.charAt(i)
-                      link += (ltr)
-                    }
-                    else {
-                      ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                      link += (key.charAt(ltr))
-                    }
-                  }
-                document.write("<a href='mailto:"+link+"'>"+link+"</a>")
-                }
-              </script><noscript>Sorry, you need Javascript on to email me.</noscript></p>
-
-        <p>GitHub: <a href="https://github.com/mahoep">mahoep</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/hoeperm/">hoeperm</a></p>
-
-        <!--ul>
+	        gtag('config', 'GA_TRACKING_ID');
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Matthew Hoeper</h1><img alt="Headshot of Matt" src="images/headshot.png" style=
+			"width:270px">
+			<p>Hello! My name is Matt and I'm a M.S. student at Purdue University studying Mechanical
+			Engineering. I work at the Zucrow Labs under Dr. Terrence Meyer studying combustion, sprays, and
+			propulsion. I'm also involved with the liquid rocketry team.</p>
+			<p></p>
+			<p>Email:
+			<script language="javascript" type="text/javascript">
+			                      //<!--
+			                      // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+			                      // Random encryption key feature coded by Andrew Moulden
+			                      // This code is freeware provided these four comment lines remain intact
+			                      // A wizard to generate this code is at http://www.jottings.com/obfuscator/
+			                      //-->
+			                      { coded = "MsF8O8B@OaBYa8.8Ya"
+			                        key = "bhnBIRW6T0ZF43E8zpdsQu2USvNiwcyVPm5OYx1ajLHgGJDrqtfM79CoXAKekl"
+			                        shift=coded.length
+			                        link=""
+			                        for (i=0; i<coded.length; i++) {
+			                          if (key.indexOf(coded.charAt(i))==-1) {
+			                            ltr = coded.charAt(i)
+			                            link += (ltr)
+			                          }
+			                          else {
+			                            ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+			                            link += (key.charAt(ltr))
+			                          }
+			                        }
+			                      document.write("<a href='mailto:"+link+"'>"+link+"<\/a>")
+			                      }
+			</script><noscript>Sorry, you need Javascript on to email me.</noscript></p>
+			<p>GitHub: <a href="https://github.com/mahoep">mahoep</a></p>
+			<p>LinkedIn: <a href="https://www.linkedin.com/in/hoeperm/">hoeperm</a></p><!--ul>
           <li><a href="https://google.com">Download <strong>Resume</strong></a></li>
           <li><a href="https://google.com">Download <strong>Portfolio</strong></a></li>
         </ul-->
-      <p class="view"><a href="https://github.com/mahoep/minimal">View the Project on GitHub</a></p>
-      </header>
-      <section>
+			<p class="view"><a href="https://github.com/mahoep/minimal">View the Project on GitHub</a></p>
+		</header>
+		<section>
+			<meta content="width=device-width, initial-scale=1" name="viewport"><button class="tablink" id=
+			"defaultOpen" onclick="openPage('Home')">About Me</button> <button class="tablink" onclick=
+			"openPage('Resume')">Resume</button> <button class="tablink" onclick=
+			"openPage('Current_Research')">Current Research</button> <button class="tablink" onclick=
+			"openPage('Purdue_Space_Program')">Purdue Space Program</button><button class="tablink" onclick=
+			"openPage('Past_Research')">Past Research</button> <button class="tablink" onclick=
+			"openPage('Capstone')">Senior Capstone</button>
+			<div class="tabcontent" id="Home">
+				<h3>About Me</h3>
+				<p>I'm currently a graduate research student at Purdue University on a M.S. track in
+				Mechanical Engineering. My research focuses on liquid sprays, combustion, and propulsion at the
+				Zucrow Laboratories. I completed my B.S. in Mechanical Engineering at Oregon State in June
+				2018. There I developed and furthered my passion for aerospace with <a href=
+				"https://www.osuaiaa.com/">Oregon State AIAA</a>. I worked with the sounding rocketry teams since I
+				started and used a rocket team as a platform for my senior capstone project. I also gained
+				research experience at Oregon State under <a href=
+				"http://research.engr.oregonstate.edu/blunckgroup/">Dr. David Blunck</a> working at the
+				Propulsion Lab. I worked as a undergrad research assistant on a pulse detonation engine and
+				performed research on energetic materials.</p>
 
-        <head>
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-        </head>
-        <body>
+			</div>
+			<div class="tabcontent" id="Resume">
+				<p>This tab is for holding my resume and a .pdf <a href=
+				"resume/Matthew_Hoeper_portfolio.pdf">portfolio</a> that is essentially this website, but
+				condensed.</p><embed height="2100px" src="resume/Hoeper_Matthew_resume.pdf" width="800px">
+			</div>
+			<div class="tabcontent" id="Current_Research">
+				<h3>Under Construction</h3>
+				<p>Dr. Meyer’s research involves investigating thermal-fluid behavior under extreme
+				environments. Particularly in propulsion and combustion environments or hypersonic aerodynamics
+				Research topics of the group can be found <a href=
+				"https://engineering.purdue.edu/ME/Research/Presentations/Meyer%20Research%20Topics%202016.pdf">
+				here.</a> Courtesy of Dr. Meyer.<br>
+				<br>
+				Almost all work revolves around the use of ultra-fast lasers to study the regions of interest
+				at extremely high repetition rates. We have a multitude of lasers that can operate at
+				nanosecond, picosecond, or even femtosecond ranges at repetition rates in the MHz range. For
+				example, I work on a project that studies the evolution of explosive blasts. Obviously, the
+				time scales here are extremely small so we need to collect images at an similarly high rate. We
+				have used a camera that can capture up to 5 million frames per second. With such a high frame
+				rate, the camera shutter can only be open for maybe 80 nanoseconds. With this much time, very
+				little light is collected by the sensor. To mitigate this we use an ultra-fast, high power
+				laser to illuminate the blast with so much energy that the camera can detect what is going on
+				in the blast. As an extension from the blasts project, I also work on developing software that
+				can perform volumetric and tomographic reconstructions from a set of images. Say if you have a
+				coffee thermos and you take a few images at various angle, the software would be able to
+				reconstruct the thermos in 3D. However, instead of a thermos, we have flames, shrapnel,
+				etc.</p><br><p>
+				The other project I work on is centered around studying the evolution of fuel sprays and
+				atomization. We investigate how the liquid and vapor distribution evolves at short time scales
+				to better understand the physics at play. Understanding how liquid/vapor distributions in fuel
+				sprays evolve is essential for increasing combustion efficiency and/or lowering emissions, for
+				example. We employ a technique called laser induced fluorescence or LIF. It works by hitting
+				the fuel with high energy laser pulses. The fuel then absorbs the light and will reemit it at a
+				different wavelength. The emission process is then captured with a camera. The liquid and vapor
+				portions of the fuel have different LIF signals, which is something we can study.
+				</p>
+			</div>
+			<div class="tabcontent" id="Purde_Space_Program">
+				<p>work</p>
+			</div>
 
-          <button class="tablink" onclick="openPage('Home')" id="defaultOpen">About Me</button>
-          <button class="tablink" onclick="openPage('Resume')" >Resume</button>
-          <button class="tablink" onclick="openPage('Current_Research')">Current Research</button>
-          <button class="tablink" onclick="openPage('Past_Research')">Past Research</button>
-          <button class="tablink" onclick="openPage('Capstone')">Senior Capstone</button>
-
-          <div id="Home" class="tabcontent">
-            <h3>About Me</h3>
-            <p>
-                I'm currently a graduate research student at Purdue University on a full M.S./PhD track in Mechanical Engineering. My research focuses on
-                liquid sprays, combustion, and propulsion at the Zucrow Laboratories. I completed my B.S. in Mechanical Engineering at Oregon State in June 2018.
-                There I developed and furthered my passion for aerospace with
-                <a href="https://www.osuaiaa.com/">Oregon State AIAA</a>. I worked on sounding rocketry teams since I started and used the rocket as a platform
-                for my senior capstone project. I also gained research experience at Oregon State under <a href="http://research.engr.oregonstate.edu/blunckgroup/">
-                  Dr. David Blunck</a> working at the Propulsion Lab. I worked as a undergrad research assistant on a pulse detonation engine and performed research on energetic materials.
-            </p>
-            <h3>Why PhD?</h3>
-              <p>
-                People always ask me why I want to get a PhD and for a while I didn't really have a good answer. I think this animation by
-                <a href="http://matt.might.net/articles/phd-school-in-pictures/">Matt Might</a> is the best way to explain.
-              </p>
-              <center>
-              <video width="480" height="380" controls>
-                <source src="images/giphy-hd.mp4" type="video/mp4">
-              </video>
-              <br>
-              Source: <a href="http://matt.might.net/articles/phd-school-in-pictures/">http://matt.might.net/articles/phd-school-in-pictures/</a>
-            </center>
-
-          </div>
-
-          <div id="Resume" class="tabcontent">
-            <p>This tab is for holding my resume and a .pdf <a href="resume/Matthew_Hoeper_portfolio.pdf">portfolio</a> that is essentially this website, but condensed.</p>
-            <embed src="resume/Hoeper_Matthew_resume.pdf" width="800px" height="2100px" />
-
-          </div>
-
-          <div id="Current_Research" class="tabcontent">
-            <h3>Under Construction</h3>
-            <p>Dr. Meyer’s research involves investigating thermal-fluid behavior under extreme environments. Particularly in propulsion and combustion environments or hypersonic aerodynamics
-              Research topics of the group can be found
-              <a href="https://engineering.purdue.edu/ME/Research/Presentations/Meyer%20Research%20Topics%202016.pdf">here.</a> Courtesy of Dr. Meyer.
-              <br>
-              <br>
-              Almost all work revolves around the use of ultra-fast lasers to study the regions of interest at extremely high repetition rates. We have a multitude of lasers that can operate
-              at nanosecond, picosecond, or even femtosecond ranges at repetition rates in the MHz range. For example, I work on a project that studies the evolution of explosive blasts.
-              Obviously, the time scales here are extremely small so we need to collect images at an similarly high rate. We have used a camera that can capture up to 5 million frames per second.
-              With such a high frame rate, the camera shutter can only be open for maybe 80 nanoseconds. With this much time, very little light is collected by the sensor. To mitigate this we
-              use an ultra-fast, high power laser to illuminate the blast with so much energy that the camera can detect what is going on in the blast.
-              As an extension from the blasts project, I also work on developing software that can perform volumetric and tomographic reconstructions from a set of images. Say if you have a coffee
-              thermos and you take a few images at various angle, the software would be able to reconstruct the thermos in 3D. However, instead of a thermos, we have flames, shrapnel, etc.</p>
-              <br>
-              The other project I work on is centered around studying the evolution of fuel sprays and atomization. We investigate how the liquid and vapor distribution evolves at short time
-              scales to better understand the physics at play. Understanding how liquid/vapor distributions in fuel sprays evolve is essential for increasing combustion efficiency and/or
-              lowering emissions, for example. We employ a technique called laser induced fluorescence or LIF. It works by hitting the fuel with high energy laser pulses. The fuel then
-              absorbs the light and will reemit it at a different wavelength. The emission process is then captured with a camera. The liquid and vapor portions of the fuel have different
-              LIF signals, which is something we can study.
-
-            </p>
-          </div>
-
-          <div id="Past_Research" class="tabcontent">
-            <h2>This page is for information and documentation for past research projects. Some information may be intentionally obscured or omitted by the request of the PI.</h2>
-
-            <h2>Energetic Material Research</h2><img src="images/cire_logo_final_1.jpg" width="200" alt="CIRELAB" style="float:right">
-            <p>Towards the end of my senior year I worked with Dr. Blunck to develop a testing procedure for testing solid propellant strands. We wanted to investigate the combustion
-              behavior of the propellant under various *conditions*. All that can be said about the testing is that the propellant strands were tested in conditions that
-              have not been studied thoroughly and by very few groups. </p>
-              <br>
-              <br>
-            <h2>Pulse Detonation Engine</h2>
-            <p>For the majority of my time working at the propulsion lab, I supported a pulse detonation project along with a few other undergraduates and one graduate student. The project was
-            centered around measuring detonation velocities in the presence of various inert gases such as nitrogen or carbon dioxide. My responsibilities included setting up and performing test
-            campaigns, and manufacturing parts when needed. The system ran on propane as fuel and notorious oxidizer as the oxidizer. The detonation tube was approximately 5ft long and could reach
-            exit velocities of upwards of 3,000 m/s. </p><img src="images/pulse_detonation_engine_.png" width="400" alt="patch">
-          </div>
-
-          <div id="Capstone" class="tabcontent">
-            <h2>Project Overview</h2>
-            <img src="images/mission_patch.png" width="200" alt="patch" style="float:right">
-            <p>My capstone project was a sounding rocketry project for the 2018 Spaceport America Cup (formerly ESRA/IREC). The team was made of 18 seniors across
-             mechanical engineering, electrical engineering, and computer science. There were 3 people per sub team in aerodynamics and recovery, propulsion, structures,
-             payload, avionics, and computer science. My focus was in propulsion and this page follows the timeline of the project. A technical report of the entire
-             rocket can be found <a href="http://www.soundingrocket.org/2018-sa-cup.html">here (we are Team 21)</a>, or
-              here <a href="resume/21_project_report.pdf">as a direct .pdf</a>. The abstract submitted for the conference can be found
-              <a href="resume/21_Extended Abstract.pdf">here</a> and the presentation <a href="resume/21_Presentation Slides.pdf">here</a>.
-
-             <br><br>Propulsion is in charge of designing, manufacturing and testing the propulsion system as well as running launch systems. The design phase officially starts
-             in September with the build phase starting in January. Solid propulsion was chosen very early on, mainly because OSU is not ready for hybrid/liquid at this competition and solids
-             were used in previous years.
-            </p>
-            <h2>Version 1.0 </h2>
-            <p>At the end of the Fall term the full design at the time was what we called, Version 1.0. This version was ready to be built and tested. However, the exact propellant
-              formulation was a place holder. The team wanted to perform sub-scale testing first to characterize different propellant formulations. The design consisted of a 6061-T6
-              aluminum casing that had a 5.0" inner diameter, a minimum wall thickness of 0.175" and was 40" long. The ends of the casing had larger diameters that matched the inner
-              diameter of the airframe to ensure concentricity. To insulate the casing a fiberglass liner was chosen. The nozzle was to be made up of isomold graphite. The grain configuration
-              was BATES: made up of 4 8" grains. A cross section is shown in the image below.
-              <br>
-              <br>
-              <img src="images/v1.jpg" alt="version1">
-            </p>
-            <h2>Sub Scale Testing</h2>
-            <p>
-              The sub scale configuration consisted of a 2.0" inner diameter, 0.25" wall 6061-T6 aluminum casing. It was 12" long and had 2 4" inch BATES grains with a 0.75" core. The team performed many sub scale tests to investigate the ideal perforamce parameters for the propellant. The first round of testing had a propellant called "SOS" which
-              is a slow burning propellant and "RIO" which is an APCP, high metals, fast burning propellant.
-              <center>
-              <video width="600" height="338" controls>
-                <source src="videos/sub_scale_1.mp4" type="video/mp4">
-              </video>
-              </center>
-              <br>
-              As it turns out, SOS was too slow and RIO was too fast so the catalyst from RIO was removed and we called the propellant "Bare Bones" or "BB".
-              <br>
-              <br>
-              <center>
-              <video width="600" height="337" controls>
-                <source src="videos/sub_scale_2.mp4" type="video/mp4">
-              </video>
-              </center>
-          </p>
-          <h2>V1.0 Testing</h2>
-          <p>
-            Once the propellant was characterized, the team moved toward the first full scale static test fire, which occurred on March 3rd, 2018. Prior to firing, however, the casing is tested
-            hydrostatically. Which involves filling the casing up with water and using a grease gun to apply internal pressure. The max chamber pressure that was simulated was 800 psi so the casing
-            was tested to 1200 psi for 30 seconds. Unfortunately, the test resulted in a catastrophic failure due to an overpressure. The expected max pressure was 800 psi, the actual was nearing 2300.
-            The two videos below show the failure. The first video is being played back at about 1/15 speed.
-
-            <br>
-            <center>
-            <video width="600" height="337" controls>
-              <source src="videos/FS1_slow_mo.mp4" type="video/mp4">
-            </video>
-            </center>
-            <br>
-            This is a high speed video captured at 5000 Hz with a resolution of 1280x720. At about 55 seconds you can see the pressure wave hit the mirror.
-            <br>
-            <br>
-            <center>
-            <video width="600" height="337" controls>
-              <source src="videos/FS1_highspeed.mp4" type="video/mp4">
-            </video>
-            </center>
-            <br>
-
-            The two plots below show the chamber pressure over time. A load cell was used to record thrust data, however, the load cell was destroyed immediately upon ignition and did note
-            produce and meaningful data.
-            <br>
-            <center>
-              <img src="images/burn1_pressure.jpg" width="500" alt="burn1_p">
-            </center>
-            <br>
-            The failure was attributed to an significant amount of surface area that burn unexpectedly. The outside of the grains are supposed to be inhibited by casting tubes but the casting tubes did note
-            hold up to the extreme heat and pressure. Miraculously, a propellant grain was found about 20 feet from the test stand, shown below. The grain was the primary piece of evidence that allowed us to come
-            to our conclusion.
-            <br>
-            <br>
-            <center>
-              <img src="images/unburned_grain.JPG" width="400" alt="unburned_grain">
-            </center>
-            <br>
-          </p>
-          <h2>V1.1 Testing</h2>
-          <p>
-            The design of the motor went largely unchanged with only a few minor changes. The payload became heavier so more energy was needed from the motor. Another grain of propellant was added, extending
-            the motor by 5". The wall thickness of the casing was increased by 0.010". The final change was to the propellant; based on what our mentors had seen in the prior mix, they recommended
-            the addition of a bonding agent. The bonding agent was a tetra-functional polyol chemical called "NPE". The team had an exceptionally fast turn around time of just 20 days after the first test.
-            The second test occurred on March 23rd, 2018.
-
-            <br>
-            <br>
-            <center>
-            <video  height="600" controls>
-              <source src="videos/FS2_slow_mo.mp4" type="video/mp4">
-            </video>
-            </center>
-            <br>
-
-            Once again, the test resulted in a failure due to an overpressure but for a different reason than the first test. The expected max pressure was 600 psi and as the plot shows, the pressure reached
-            nearly 1900 psi.
-            <br>
-            <br>
-            <center>
-              <img src="images/burn2_pressure.jpg" width="500" alt="burn2_pressure">
-            </center>
-            <br>
-            The team had many different theories but the true reason was not realized until
-            about 2 weeks later after more subscale testing was performed. Tests that we performed along with testing that our mentors did, it was determined that the bonding agent had an adverse affect
-            on the propellant chemistry which caused the overpressure. After the failure mode was determined, the team decided to switch to a propellant that had been well characterized by OSU in the past.
-            A summary of our propellant characterizations can be seen below.
-            <br>
-            <br>
-            <center>
-              <img src="images/burn_rates.jpg" width="500" alt="burn_rates">
-            </center>
-            <br>
-            Barebones is the propellant used in the first test, Barebones v2 was used in the second test and Orange Kool-aid is the propellant that the team switched to after the second test.
-            All propellants are APCP based.
-          </p>
-          <h2>Mid Scale Testing</h2>
-          <p>
-            To be absolutely sure that the propellant chemistry, packing method, the liner, and the casting tubes are all up to spec, the performed what we called a mid scale test. The casing for the test
-            was the same diameter as the previous two tests, but only half the length. The test was conducted on April 15th, 2018.
-
-            <br>
-            <br>
-            <center>
-            <video  width="600" controls>
-              <source src="videos/Midscale.mp4" type="video/mp4">
-            </video>
-            </center>
-            <br>
-
-            After many months of work, the propulsion team had a successful test. The expected max pressure was within 10 psi of the actual value. A plot of the chamber pressure vs. time is
-            shown below.
-
-            <br>
-            <br>
-            <center>
-              <img src="images/midscale_pressure.jpg" width="500" alt="midscale_pressure">
-            </center>
-            <br>
-
-          </p>
-
-          <h2>V1.2 Design</h2>
-          <p>
-            After the success of the midscale test, it was time to test the full scale configuration once again. The design of this version is very similar to the prior versions. It used the same
-            liner and casting tubes. It also had the same retention methods. The largest change is the grain geometry. As the cross section shows, the inner diameter of the propellant grains
-            are stepped. This was done to move the center of mass of motor assembly as far forward as possible to increase the stability margin of the rocket. The radial holes near the nozzle
-            end were a new addition as well (which was tested in the mid scale). The holes are threaded such that button head cap screws pass through the airframe and into the casing. One of the holes is used for the rail button
-            anchor. Total propellant mass was 14 kg and the dry mass of motor assembly is about 13.5 kg. The third full scale test was on May 10th.
-
-            <br>
-            <center>
-              <img src="images/v13.jpg" width=99% alt="v13">
-            </center>
-            <br>
-
-
-
-          <br>
-          <center>
-          <video  width="600" controls>
-            <source src="videos/FS_3.mp4" type="video/mp4">
-          </video>
-          </center>
-          <br>
-
-          To put it shortly, the team was ecstatic! One of our mentors said "That was the best looking solid rocket test I've ever seen. Textbook even." Calculated impulse was 26.5 kNs.
-
-          </p>
-          <h2>Test Launch</h2>
-          <p>
-            After the success of the static test fire it was finally time for a test launch. We had gambled on the motor working on May 10th by making another batch of propellant for a subsequent flight
-            test following the test. Two days later, the entire team packed up and drove out to Brothers, OR for a flight test.
-            <br>
-            <center>
-            <video  width="600" controls>
-              <source src="videos/Launch.mp4" type="video/mp4">
-            </video>
-            </center>
-            <br>
-
-            As the video shows the motor experienced a combustion instability at approximately t+0.5 seconds. The rocket then increased it's angle from vertical slightly. However, the rocket
-            was already traveling fast enough for passive aerodynamic stability to take over and correct itself. The rocket stood 12'4" tall and had a lift off weight of 45 kg, reached a
-            max velocity of 536.4 m/s (Mach 1.6). Apogee was 25,000 ft AGL.
-          </p>
-
-          <h2>Spaceport America Cup</h2>
-          <p>
-            After a year's worth of work it was time to travel to Spaceport America in New Mexico to compete. The team traveled the day after graduation and drove
-            for 36 hours. The range opened on June 20th but we stood down due to high winds. The next day we went back to the flight range at 2:30 am to begin
-            integrating and preparing for launch.
-
-            <br>
-            <center>
-            <video  width="600" controls>
-              <source src="videos/spaceport_launch.mp4" type="video/mp4">
-            </video>
-            </center>
-            <br>
-
-            Against everyone's hopes and dreams the motor suffered a chuff (combustion instability) at about t+1s. The nozzle was ejected along with all of the propellant.
-            The burning mass that is falling in the video is a piece of propellant. The upper section of the airframe was shredded. Miraculously, the motor was still fixed
-            to the lower airframe, but only just. The nose cone and payload were recovered with minimal damage.
-            <br>
-            <br>
-            I encourage you to watch <a href="https://www.youtube.com/watch?v=Vxc1HLs-mfQ&feature=player_embedded"> this video.</a>
-            It's a bit long but shows the two launch events. It has much better angles of the launches as well. The Brothers launch occurs at 3:36 in the video.
-            The Spaceport launch occurs at 6:35. Our launch was also livestreamed by Spaceport America, <a href="https://www.facebook.com/spaceportamericacup/videos/2054253267972434/"> the video can be found here.</a>
-
-         </p>
-         <h2>Concluding remarks</h2>
-         <p>
-           Obviously, this a very condensed version of my capstone project; there is a lot of information, design alternatives, and other specifics that I left out. If you
-           have any questions, feel free to contact me.
-           <br>
-           <br>
-           The chuffing problem that the motor experienced in both launches was not unique to our team. Another rocketry team at OSU was experiencing similar problems
-           with their motors as well. After Spaceport America, our advisor had asked us to investigate the causes. Along with next years' propulsion team, we decided
-           that the reason for chuffing was the ammonium perchlorate. We were getting our AP from several sources and wanted to reduce to just one. I left for graduate school
-           three weeks before the test, but it was successful: no chuff.
-           <br>
-           <br>
-           This project was the most difficult, time consuming, saddening, and rewarding project I have ever been apart of. I would do it again in a heartbeat.
-         </p>
-          </div>
-          <script src="javascripts/tabs.js"></script>
-
-
-
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-  </body>
+			<div class="tabcontent" id="Past_Research">
+			<h2>This page is for information and documentation for past research projects. Some information
+			may be intentionally obscured or omitted by the request of the PI.</h2>
+			<h2>Energetic Material Research</h2><img alt="CIRELAB" src="images/cire_logo_final_1.jpg" style=
+			"float:right" width="200">
+			<p>Towards the end of my senior year I worked with Dr. Blunck to develop a testing procedure for
+			testing solid propellant strands. We wanted to investigate the combustion behavior of the
+			propellant under various *conditions*. All that can be said about the testing is that the
+			propellant strands were tested in conditions that have not been studied thoroughly and by very
+			few groups.</p><br>
+			<br>
+			<h2>Pulse Detonation Engine</h2>
+			<p>For the majority of my time working at the propulsion lab, I supported a pulse detonation
+			project along with a few other undergraduates and one graduate student. The project was centered
+			around measuring detonation velocities in the presence of various inert gases such as nitrogen
+			or carbon dioxide. My responsibilities included setting up and performing test campaigns, and
+			manufacturing parts when needed. The system ran on propane as fuel and notorious oxidizer as the
+			oxidizer. The detonation tube was approximately 5ft long and could reach exit velocities of
+			upwards of 3,000 m/s.</p><img alt="patch" src="images/pulse_detonation_engine_.png" width=
+			"400"></div>
+			<div class="tabcontent" id="Capstone">
+				<h2>Project Overview</h2><img alt="patch" src="images/mission_patch.png" style="float:right"
+				width="200">
+				<p>My capstone project was a sounding rocketry project for the 2018 Spaceport America Cup
+				(formerly ESRA/IREC). The team was made of 18 seniors across mechanical engineering, electrical
+				engineering, and computer science. There were 3 people per sub team in aerodynamics and
+				recovery, propulsion, structures, payload, avionics, and computer science. My focus was in
+				propulsion and this page follows the timeline of the project. A technical report of the entire
+				rocket can be found <a href="http://www.soundingrocket.org/2018-sa-cup.html">here (we are Team
+				21)</a>, or here <a href="resume/21_project_report.pdf">as a direct .pdf</a>. The abstract
+				submitted for the conference can be found <a href="resume/21_Extended%20Abstract.pdf">here</a>
+				and the presentation <a href="resume/21_Presentation%20Slides.pdf">here</a>.<br>
+				<br>
+				Propulsion is in charge of designing, manufacturing and testing the propulsion system as well
+				as running launch systems. The design phase officially starts in September with the build phase
+				starting in January. Solid propulsion was chosen very early on, mainly because OSU is not ready
+				for hybrid/liquid at this competition and solids were used in previous years.</p>
+				<h2>Version 1.0</h2>
+				<p>At the end of the Fall term the full design at the time was what we called, Version 1.0.
+				This version was ready to be built and tested. However, the exact propellant formulation was a
+				place holder. The team wanted to perform sub-scale testing first to characterize different
+				propellant formulations. The design consisted of a 6061-T6 aluminum casing that had a 5.0"
+				inner diameter, a minimum wall thickness of 0.175" and was 40" long. The ends of the casing had
+				larger diameters that matched the inner diameter of the airframe to ensure concentricity. To
+				insulate the casing a fiberglass liner was chosen. The nozzle was to be made up of isomold
+				graphite. The grain configuration was BATES: made up of 4 8" grains. A cross section is shown
+				in the image below.<br>
+				<br>
+				<img alt="version1" src="images/v1.jpg"></p>
+				<h2>Sub Scale Testing</h2>
+				<p>The sub scale configuration consisted of a 2.0" inner diameter, 0.25" wall 6061-T6 aluminum
+				casing. It was 12" long and had 2 4" inch BATES grains with a 0.75" core. The team performed
+				many sub scale tests to investigate the ideal perforamce parameters for the propellant. The
+				first round of testing had a propellant called "SOS" which is a slow burning propellant and
+				"RIO" which is an APCP, high metals, fast burning propellant.</p>
+				<center>
+					<video controls="" height="338" width="600"><source src="videos/sub_scale_1.mp4" type=
+					"video/mp4"></video>
+				</center><br>
+				As it turns out, SOS was too slow and RIO was too fast so the catalyst from RIO was removed and
+				we called the propellant "Bare Bones" or "BB".<br>
+				<br>
+				<center>
+					<video controls="" height="337" width="600"><source src="videos/sub_scale_2.mp4" type=
+					"video/mp4"></video>
+				</center>
+				<p></p>
+				<h2>V1.0 Testing</h2>
+				<p>Once the propellant was characterized, the team moved toward the first full scale static
+				test fire, which occurred on March 3rd, 2018. Prior to firing, however, the casing is tested
+				hydrostatically. Which involves filling the casing up with water and using a grease gun to
+				apply internal pressure. The max chamber pressure that was simulated was 800 psi so the casing
+				was tested to 1200 psi for 30 seconds. Unfortunately, the test resulted in a catastrophic
+				failure due to an overpressure. The expected max pressure was 800 psi, the actual was nearing
+				2300. The two videos below show the failure. The first video is being played back at about 1/15
+				speed.<br></p>
+				<center>
+					<video controls="" height="337" width="600"><source src="videos/FS1_slow_mo.mp4" type=
+					"video/mp4"></video>
+				</center><br>
+				This is a high speed video captured at 5000 Hz with a resolution of 1280x720. At about 55
+				seconds you can see the pressure wave hit the mirror.<br>
+				<br>
+				<center>
+					<video controls="" height="337" width="600"><source src="videos/FS1_highspeed.mp4" type=
+					"video/mp4"></video>
+				</center><br>
+				The two plots below show the chamber pressure over time. A load cell was used to record thrust
+				data, however, the load cell was destroyed immediately upon ignition and did note produce and
+				meaningful data.<br>
+				<center>
+					<img alt="burn1_p" src="images/burn1_pressure.jpg" width="500">
+				</center><br>
+				The failure was attributed to an significant amount of surface area that burn unexpectedly. The
+				outside of the grains are supposed to be inhibited by casting tubes but the casting tubes did
+				note hold up to the extreme heat and pressure. Miraculously, a propellant grain was found about
+				20 feet from the test stand, shown below. The grain was the primary piece of evidence that
+				allowed us to come to our conclusion.<br>
+				<br>
+				<center>
+					<img alt="unburned_grain" src="images/unburned_grain.JPG" width="400">
+				</center><br>
+				<p></p>
+				<h2>V1.1 Testing</h2>
+				<p>The design of the motor went largely unchanged with only a few minor changes. The payload
+				became heavier so more energy was needed from the motor. Another grain of propellant was added,
+				extending the motor by 5". The wall thickness of the casing was increased by 0.010". The final
+				change was to the propellant; based on what our mentors had seen in the prior mix, they
+				recommended the addition of a bonding agent. The bonding agent was a tetra-functional polyol
+				chemical called "NPE". The team had an exceptionally fast turn around time of just 20 days
+				after the first test. The second test occurred on March 23rd, 2018.<br>
+				<br></p>
+				<center>
+					<video controls="" height="600"><source src="videos/FS2_slow_mo.mp4" type="video/mp4"></video>
+				</center><br>
+				Once again, the test resulted in a failure due to an overpressure but for a different reason
+				than the first test. The expected max pressure was 600 psi and as the plot shows, the pressure
+				reached nearly 1900 psi.<br>
+				<br>
+				<center>
+					<img alt="burn2_pressure" src="images/burn2_pressure.jpg" width="500">
+				</center><br>
+				The team had many different theories but the true reason was not realized until about 2 weeks
+				later after more subscale testing was performed. Tests that we performed along with testing
+				that our mentors did, it was determined that the bonding agent had an adverse affect on the
+				propellant chemistry which caused the overpressure. After the failure mode was determined, the
+				team decided to switch to a propellant that had been well characterized by OSU in the past. A
+				summary of our propellant characterizations can be seen below.<br>
+				<br>
+				<center>
+					<img alt="burn_rates" src="images/burn_rates.jpg" width="500">
+				</center><br>
+				Barebones is the propellant used in the first test, Barebones v2 was used in the second test
+				and Orange Kool-aid is the propellant that the team switched to after the second test. All
+				propellants are APCP based.
+				<p></p>
+				<h2>Mid Scale Testing</h2>
+				<p>To be absolutely sure that the propellant chemistry, packing method, the liner, and the
+				casting tubes are all up to spec, the performed what we called a mid scale test. The casing for
+				the test was the same diameter as the previous two tests, but only half the length. The test
+				was conducted on April 15th, 2018.<br>
+				<br></p>
+				<center>
+					<video controls="" width="600"><source src="videos/Midscale.mp4" type="video/mp4"></video>
+				</center><br>
+				After many months of work, the propulsion team had a successful test. The expected max pressure
+				was within 10 psi of the actual value. A plot of the chamber pressure vs. time is shown
+				below.<br>
+				<br>
+				<center>
+					<img alt="midscale_pressure" src="images/midscale_pressure.jpg" width="500">
+				</center><br>
+				<p></p>
+				<h2>V1.2 Design</h2>
+				<p>After the success of the midscale test, it was time to test the full scale configuration
+				once again. The design of this version is very similar to the prior versions. It used the same
+				liner and casting tubes. It also had the same retention methods. The largest change is the
+				grain geometry. As the cross section shows, the inner diameter of the propellant grains are
+				stepped. This was done to move the center of mass of motor assembly as far forward as possible
+				to increase the stability margin of the rocket. The radial holes near the nozzle end were a new
+				addition as well (which was tested in the mid scale). The holes are threaded such that button
+				head cap screws pass through the airframe and into the casing. One of the holes is used for the
+				rail button anchor. Total propellant mass was 14 kg and the dry mass of motor assembly is about
+				13.5 kg. The third full scale test was on May 10th.<br></p>
+				<center>
+					<img alt="v13" src="images/v13.jpg" width="99%">
+				</center><br>
+				<br>
+				<center>
+					<video controls="" width="600"><source src="videos/FS_3.mp4" type="video/mp4"></video>
+				</center><br>
+				To put it shortly, the team was ecstatic! One of our mentors said "That was the best looking
+				solid rocket test I've ever seen. Textbook even." Calculated impulse was 26.5 kNs.
+				<p></p>
+				<h2>Test Launch</h2>
+				<p>After the success of the static test fire it was finally time for a test launch. We had
+				gambled on the motor working on May 10th by making another batch of propellant for a subsequent
+				flight test following the test. Two days later, the entire team packed up and drove out to
+				Brothers, OR for a flight test.<br></p>
+				<center>
+					<video controls="" width="600"><source src="videos/Launch.mp4" type="video/mp4"></video>
+				</center><br>
+				As the video shows the motor experienced a combustion instability at approximately t+0.5
+				seconds. The rocket then increased it's angle from vertical slightly. However, the rocket was
+				already traveling fast enough for passive aerodynamic stability to take over and correct
+				itself. The rocket stood 12'4" tall and had a lift off weight of 45 kg, reached a max velocity
+				of 536.4 m/s (Mach 1.6). Apogee was 25,000 ft AGL.
+				<p></p>
+				<h2>Spaceport America Cup</h2>
+				<p>After a year's worth of work it was time to travel to Spaceport America in New Mexico to
+				compete. The team traveled the day after graduation and drove for 36 hours. The range opened on
+				June 20th but we stood down due to high winds. The next day we went back to the flight range at
+				2:30 am to begin integrating and preparing for launch.<br></p>
+				<center>
+					<video controls="" width="600"><source src="videos/spaceport_launch.mp4" type=
+					"video/mp4"></video>
+				</center><br>
+				Against everyone's hopes and dreams the motor suffered a chuff (combustion instability) at
+				about t+1s. The nozzle was ejected along with all of the propellant. The burning mass that is
+				falling in the video is a piece of propellant. The upper section of the airframe was shredded.
+				Miraculously, the motor was still fixed to the lower airframe, but only just. The nose cone and
+				payload were recovered with minimal damage.<br>
+				<br>
+				I encourage you to watch <a href=
+				"https://www.youtube.com/watch?v=Vxc1HLs-mfQ&feature=player_embedded">this video.</a> It's a
+				bit long but shows the two launch events. It has much better angles of the launches as well.
+				The Brothers launch occurs at 3:36 in the video. The Spaceport launch occurs at 6:35. Our
+				launch was also livestreamed by Spaceport America, <a href=
+				"https://www.facebook.com/spaceportamericacup/videos/2054253267972434/">the video can be found
+				here.</a>
+				<p></p>
+				<h2>Concluding remarks</h2>
+				<p>Obviously, this a very condensed version of my capstone project; there is a lot of
+				information, design alternatives, and other specifics that I left out. If you have any
+				questions, feel free to contact me.<br>
+				<br>
+				The chuffing problem that the motor experienced in both launches was not unique to our team.
+				Another rocketry team at OSU was experiencing similar problems with their motors as well. After
+				Spaceport America, our advisor had asked us to investigate the causes. Along with next years'
+				propulsion team, we decided that the reason for chuffing was the ammonium perchlorate. We were
+				getting our AP from several sources and wanted to reduce to just one. I left for graduate
+				school three weeks before the test, but it was successful: no chuff.<br>
+				<br>
+				This project was the most difficult, time consuming, saddening, and rewarding project I have
+				ever been apart of. I would do it again in a heartbeat.</p>
+			</div>
+			<script src="javascripts/tabs.js">
+			</script>
+		</section>
+		<footer>
+			<p><small>Hosted on GitHub Pages &mdash; Theme by <a href=
+			"https://github.com/orderedlist">orderedlist</a></small></p>
+		</footer>
+	</div>
+	<script src="javascripts/scale.fix.js">
+	</script>
+</body>
 </html>
